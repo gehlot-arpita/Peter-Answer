@@ -1,0 +1,150 @@
+<html>
+<head> 
+<title> PETER </title> 
+</head>
+<style>
+.h1
+{
+height:50%;
+width:100%;
+background-color:rgb(192, 71, 71);
+color:white;
+font-size:50px;
+}
+.logo
+{
+border-radius:50%;
+height:100px;
+width:100px;
+border:solid;
+border-width:5px;
+border-color:green;
+top:10px;
+}
+.p
+{
+font-size:20px;
+color:white;
+}
+.pe
+{
+height:10%;
+width:30%;
+margin-left:35%;
+font-size:20px;
+border-top:none;
+border-left:none;
+border-right:none;
+}
+.se
+{
+color:red;
+height:4%;
+width:4%;
+font-size:15px;
+border-right:none;
+border-left:none;
+border-top:none;
+border-bottom:none;
+}
+.pa
+{
+font-size:50px;
+color:white;
+}
+.hide
+{
+    display: none;
+}
+</style>
+
+<body>
+<center>
+
+<h1 class="h1">
+<img src="aa.jpg" class="logo"><br>
+ARPITA &nbsp; ANSWERS
+<p class="p">
+Welcome to Arpita Answers...<br>
+Do you need to ask a question? Are you looking for
+ answers? Arpita offers you a space to ask anything<br>
+ you want. However, before each question you must
+ write a petition. If the answer is not what you<br>
+ expected, at least you make catharsis and ask again. 
+
+</p>
+<p class="pa" id="p4">   </p>
+
+</h1>
+</center>
+
+<input type="text" placeholder="Question" class="pe" id="qe" >
+<input type="text"  placeholder="Petition" class="pe" id="p1">
+ <input type="submit" value="SEND" class="se" onclick="f3()"> 
+<br> 
+<input type="text" id="p3" class="hide">
+                                                                                                     
+                                                                                                      
+                                                   
+<script>
+document.addEventListener("keyup",function(e)
+        
+        
+{
+  
+    var  str="Please  Arpita, Give My Answer Please  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My AnswerPlease  Arpita, Give My Answer";
+a=document.getElementById("p1").value;
+b=document.getElementById("p3").value;
+
+console.log(e);
+if(e.key==".")
+{
+  document.getElementById("p1").value="";
+  document.getElementById("p3").value="";
+}
+else
+{ 
+    ty=document.getElementById("p3").value;
+    document.getElementById("p3").value=ty+""+e.key;
+    
+}
+
+alen=a.length;
+document.getElementById("p1").value="";
+str2="";
+for(i=0;i<alen;i++)
+{
+str2=str2+""+str[i];
+}
+document.getElementById("p1").value=str2;
+
+    
+
+           
+            
+    
+
+});
+
+function f3()
+{
+    b=document.getElementById("p3").value;
+    document.getElementById("p4").innerHTML=b;
+    
+    
+    
+
+}
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
